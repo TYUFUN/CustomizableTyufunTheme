@@ -4,16 +4,32 @@
  * @version 1.0.0
  * @description main fully customizable theme 
  * @source https://github.com/TYUFUN/CustomizableTyufunTheme/blob/main/CustomizableTyufunTheme.css
+ * @updateUrl https://raw.githubusercontent.com/TYUFUN/CustomizableTyufunTheme/refs/heads/main/CustomizableTyufunTheme.css
  */
- @import url(https://raw.githubusercontent.com/TYUFUN/CustomizableTyufunTheme/main/core.theme.css);
+ @import url(coretheme.css);
   :root {
     /* Main theme color */
     --main-theme-color: #af00ce;
 
     /* Background image (you can only use images from sources like github, imgur)*/
     --background-image: url(https://i.imgur.com/6QOMD5Y.jpeg);
-    --theme-transparency: rgba(0, 0, 0, 0.6);
-    --message-box-transparency: rgba(255, 255, 255, 0.05);
-    --small-user-popout-background-transparency: rgba(0, 0, 0, 0.7);
-    --big-user-popout-background-transparency: rgba(0, 0, 0, 0.8);
+
+    /* main bg transparency */
+    --theme-transparency: rgba(0, 0, 0, 0.2);
+
+
+    /* transperency for spotify player (if you use plugin) AND control panel (where you can mute microphone, headphones, etc.) */
+    --vc-spotify-player-transparency: rgba(0, 0, 0, 0.3);
+    /* width ONLY for spotify player*/
+    --vc-spotify-player-height: ;
+
+    /* transparency and color for message box */
+    --message-box-transparency: rgba(0, 0, 0, 0.7);
+
+
+
+    /* scrollbar color */
+    --scrollbar-color: rgba(255, 255, 255, 0.2);
+/*1 column: 58px, 2 columns: 116px, 3 columns: 174px, 4 columns: 232px */
+     --server-listing-width: 174px;
 }
