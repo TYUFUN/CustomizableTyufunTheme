@@ -5,6 +5,9 @@
  * @description core theme 
  * @source https://github.com/TYUFUN/CustomizableTyufunTheme/blob/main/coretheme.css
  */
+ :root {
+    --theme-background-image: url(https://i.imgur.com/6QOMD5Y.jpeg);
+}
 div[class*="appMount_"] {
     background-image: var(--theme-background-image) !important;
     background-size: cover !important;
