@@ -1,0 +1,12 @@
+/**
+ * @name coretheme
+ * @author TYUFUN
+ * @version 1.0.0
+ * @description core theme 
+ * @source https://github.com/TYUFUN/CustomizableTyufunTheme/blob/main/coretheme.css
+ */
+.appMount_629e43 {
+    background-image: var(--background-image) !important;
+    background-size: cover;
+    background-position: center;
+}

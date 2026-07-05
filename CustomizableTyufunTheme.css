@@ -1,0 +1,19 @@
+/**
+ * @name CustomizableTyufunTheme
+ * @author TYUFUN
+ * @version 1.0.0
+ * @description main fully customizable theme 
+ * @source https://github.com/TYUFUN/CustomizableTyufunTheme/blob/main/CustomizableTyufunTheme.css
+ */
+ @import url(https://github.com/TYUFUN/CustomizableTyufunTheme/blob/main/coretheme.css);
+  :root {
+    /* Main theme color */
+    --main-theme-color: #af00ce;
+
+    /* Background image (you can only use images from sources like github, imgur)*/
+    --background-image: url(https://i.imgur.com/6QOMD5Y.jpeg);
+
+
+    --blur-amount: 10px;
+    --fade-animation-speed: 0.3s;
+}
