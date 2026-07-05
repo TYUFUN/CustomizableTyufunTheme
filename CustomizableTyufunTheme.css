@@ -5,15 +5,15 @@
  * @description main fully customizable theme 
  * @source https://github.com/TYUFUN/CustomizableTyufunTheme/blob/main/CustomizableTyufunTheme.css
  */
- @import url(https://github.com/TYUFUN/CustomizableTyufunTheme/blob/main/coretheme.css);
+ @import url(https://raw.githubusercontent.com/TYUFUN/CustomizableTyufunTheme/main/core.theme.css);
   :root {
     /* Main theme color */
     --main-theme-color: #af00ce;
 
     /* Background image (you can only use images from sources like github, imgur)*/
     --background-image: url(https://i.imgur.com/6QOMD5Y.jpeg);
-
-
-    --blur-amount: 10px;
-    --fade-animation-speed: 0.3s;
+    --theme-transparency: rgba(0, 0, 0, 0.6);
+    --message-box-transparency: rgba(255, 255, 255, 0.05);
+    --small-user-popout-background-transparency: rgba(0, 0, 0, 0.7);
+    --big-user-popout-background-transparency: rgba(0, 0, 0, 0.8);
 }

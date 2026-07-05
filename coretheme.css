@@ -5,8 +5,52 @@
  * @description core theme 
  * @source https://github.com/TYUFUN/CustomizableTyufunTheme/blob/main/coretheme.css
  */
-.appMount_629e43 {
-    background-image: var(--background-image) !important;
-    background-size: cover;
-    background-position: center;
+div[class*="appMount_"] {
+    background-image: var(--theme-background-image) !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+div[class*="app_"] {
+    background-color: var(--theme-transparency) !important;
+}
+
+div[class*="bg_"] {
+    background-color: transparent !important;
+}
+
+/* Боковая панель (серверы и каналы) */
+nav[class*="guilds_"], 
+div[class*="sidebar_"] {
+    background-color: transparent !important;
+}
+
+ul[class*="stack_"] {
+    background-color: transparent !important;
+}
+
+/* Чат и списки пользователей */
+div[class*="chat_"],
+main[class*="chatContent_"],
+aside[class*="membersWrap_"],
+div[class*="members_"] {
+    background-color: transparent !important;
+}
+
+/* Поле ввода сообщения */
+div[class*="scrollableContainer_"] {
+    background-color: var(--message-box-transparency) !important;
+}
+
+/* Профили пользователей при клике (Popouts) */
+div[class*="userPopoutOuter_"] {
+    background-color: var(--small-user-popout-background-transparency) !important;
+}
+
+/* Скроллбары */
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color) !important;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
 }
