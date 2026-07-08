@@ -6,30 +6,61 @@
  * @source https://github.com/TYUFUN/CustomizableTyufunTheme/blob/main/CustomizableTyufunTheme.css
  * @updateUrl https://raw.githubusercontent.com/TYUFUN/CustomizableTyufunTheme/refs/heads/main/CustomizableTyufunTheme.css
  */
- @import url(coretheme.css);
-  :root {
-    /* Main theme color */
-    --main-theme-color: #af00ce;
 
-    /* Background image (you can only use images from sources like github, imgur)*/
+ /* dont change the import! */
+ @import url(coretheme.css);
+
+
+/* IMPORTANT INFORMATION!
+if you dont know css this is a short guide:
+what does  rgba(255, 255, 255, 0.3) mean?
+rgba means red, green, blue, and alpha (transparency) so if you want to change the transparency of an element, you adjust the last value (0.3 in this case). Transperency can be from 0 (fully transparent) to 1 (fully opaque) */
+  :root {
+    /* Main theme color (actually doesn't change much, it is used for borders, hovers, and highlights)*/
+    --main-theme-color: rgba(255, 255, 255, 0.3);
+
+    /* Background image (you can only use images from sources like github, imgur AND link must end with .jpeg, .png, or .gif or any other image extension)*/
     --background-image: url(https://i.imgur.com/6QOMD5Y.jpeg);
 
     /* main bg transparency */
-    --theme-transparency: rgba(0, 0, 0, 0.2);
+    --theme-transparency: rgba(0, 0, 0, 0.3);
 
 
     /* transperency for spotify player (if you use plugin) AND control panel (where you can mute microphone, headphones, etc.) */
     --vc-spotify-player-transparency: rgba(0, 0, 0, 0.3);
-    /* width ONLY for spotify player*/
+    /* height ONLY for spotify player (for example: 50px) */
     --vc-spotify-player-height: ;
 
-    /* transparency and color for message box */
+    /* transparency and color for message box (where you can type messages) */
     --message-box-transparency: rgba(0, 0, 0, 0.7);
-
-
 
     /* scrollbar color */
     --scrollbar-color: rgba(255, 255, 255, 0.2);
-/*1 column: 58px, 2 columns: 116px, 3 columns: 174px, 4 columns: 232px */
+
+
+     /*1 column: 58px, 2 columns: 116px, 3 columns: 174px, 4 columns: 232px */
      --server-listing-width: 174px;
+
+     /* background image for settings */
+     --background-settings-image: url(https://i.imgur.com/VFX5gNu.jpeg);
+     /* transparency for settings */
+     --settings-transparency: rgba(0, 0, 0, 0.8);
+
+     /* transparency for user profile */
+     --user-profile-transparency: rgba(0, 0, 0, 0.4);
+
+     /* transparency for user mini-profile */
+     --user-mini-profile-transparency: rgba(0, 0, 0, 0.6);
+
+
+     /* mentioned color */
+          --mentioned-color: rgba(172, 152, 22, 0.1);
+          /* --mentioned-color: rgba(96, 68, 129, 0.2); */
+
+          
+     /* private channels icon. If you want to have default icon write like this: 
+     --dm-icon-image: none;
+     --display-icon-image: ; */
+          --dm-icon-image: url(https://i.imgur.com/oEzZRqe.jpeg);
+          --display-icon-image: none;
 }

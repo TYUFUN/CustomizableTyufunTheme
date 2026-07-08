@@ -11,23 +11,23 @@
 
 
  /* div[class*="scroller_"][class*="guilds_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 } */
 
 
 /* ul[class*="stack_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 } */
 /* --- 2. Вторая панель (Каналы и блок пользователя) --- */
 
 /* div[class*="sidebar_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 } */
 /* div[class*="scrollableContainer_"], [class*="inner_"] {
-    background-color: var(--message-box-transparency) !important;
+    background-color: var(--message-box-transparency);
 }
 /* div.container_c8ffbb {
-    background-color: initial !important;
+    background-color: initial;
 }
 div[class*="standardSidebarView_"],
 div[class*="sidebarRegionScroller_"],
@@ -35,61 +35,61 @@ div[class*="contentRegion_"],
 div[class*="contentRegionScroller_"],
 div[class*="background_"],
 div[class*="fieldList_"] {
-    background-color: initial !important;
+    background-color: initial;
 } */
 
 
 /* use bg image */
 div[class*="appMount_"] {
-    background-image: var(--background-image) !important;
-    background-size: cover !important;
-    background-position: center !important;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
 }
 
 /* use theme transparency */
 div[class*="app_"] {
-    background-color: var(--theme-transparency) !important;
+    background-color: var(--theme-transparency);
 }
 
 /* обoдки */
 div[class*="bg_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 /* servers bg */
 nav[class*="guilds_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 
  /* server channels bg */
 nav[class*="container_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 
 /* Блок с ником, микрофоном и наушниками в самом низу */
 section[class*="panels_"] {
-    background-color:var(--vc-spotify-player-transparency) !important;
+    background-color:var(--vc-spotify-player-transparency);
 }
 #vc-spotify-player {
-    background-color: var(--vc-spotify-player-transparency) !important;
-    height: var(--vc-spotify-player-height) !important;
+    background-color: var(--vc-spotify-player-transparency);
+    height: var(--vc-spotify-player-height);
 }
 
 /* --- 3. Центральная часть (Чат) --- */
 div[class*="chat_"],
 main[class*="chatContent_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 /* Полоса прокрутки (Скроллбар) */
 ::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-color) !important;
+    background-color: var(--scrollbar-color);
     border-radius: 4px;
 }
 ::-webkit-scrollbar-track {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 section[class*="title_"] {
@@ -98,54 +98,54 @@ section[class*="title_"] {
 
 /* Сам контейнер с полем ввода */
 form[class*="form_"] div[class*="channelTextArea_"] {
-    background-color: var(--message-box-transparency) !important;
+    background-color: var(--message-box-transparency);
 }
 
 /* Обёртка вокруг textarea (иногда фон именно тут) */
 div[class*="channelTextArea_"] div[class*="scrollableContainer_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 /* private chats */
 ul[class*="content_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 div[class*="sidebarList_"], nav[class*="privateChannels_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 div[class*="sidebar_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 div[class*="scroller_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 div[class*="sidebar_"]::after {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 /* members on ds server */
 
 div[class*="container_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 aside[class*="membersWrap_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 div[class*="members_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 div[class*="content_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 /* nav[class*="guilds_"], div[class*="scroller_"] {
-    width: var(--server-listing-width) !important;
+    width: var(--server-listing-width);
 }
 div[class*="stack_"] {
-    width: fit-content !important;
+    width: fit-content;
 }
 div[class*="listItem_"] {
-    float: left !important;
+    float: left;
 }
 nav[class*="guilds_"]::after {
     content: "";
@@ -159,35 +159,96 @@ section[class*="container_"] {
     background-color: transparent !important;
 }
 div[class*="page_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 main[class*="container_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 div[class*="tabBody_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 div[class*="peopleColumn_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 div[class*="nowPlayingColumn_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 aside[class*="container_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 div[class*="scroller_"] {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 div[class*="itemCard_"] {
     background-color: transparent !important;
 }
 div[class*="actionButton_"] {
-    background-color: var(--theme-transparency) !important;
+    background-color: var(--theme-transparency);
 }
-div[class*="addFriend_"]{
+/* div[class*="addFriend_"]{
     background-color: var(--theme-transparency) !important;
-}
+} */
 div[class*="inner_"] {
+    background-color: transparent;
+}
+/* settings */
+
+div[class*="modal_"] {
+    background-image: var(--background-settings-image);
+    background-size: cover;
+    background-position: center;
+}
+div[class*="contentHeader_"]{
+    background-color: transparent;
+}
+div[class*="modalContent_"] {
+    background-color: var(--settings-transparency);
+}
+/* user mini-profile */
+
+div[id*="popout_"] {
+    background-color: var(--user-mini-profile-transparency);
+}
+div[class*="outer_"] {
     background-color: transparent !important;
+}
+
+/* user profile */
+main[class*="profile_"] {
+    background-color: transparent;
+}
+div[class*="profileContentInner_"] {
+    background-color: var(--user-profile-transparency);
+}
+div[class*="scrollerFade_"] {
+    background-color: transparent;
+}
+aside[class*="aside_"] {
+    background-color: transparent;
+}
+div[class*="card_"], button[class*="container_"] {
+    background-color: transparent;
+    border: 1px solid var(--main-theme-color);
+}
+div[class*="overlay_"]:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* mentioned */
+div[class*="mentioned_"] {
+    background-color: var(--mentioned-color);
+}
+div[class*="mentioned_"]::before {
+    background-color: rgb(from var(--mentioned-color) r g b / 1);
+}
+
+/* icon */
+div[class*="childWrapperNoHoverBg_"] {
+    background-image: var(--dm-icon-image);
+    background-size: cover;
+    background-position: center;
+}
+div[class*="childWrapperNoHoverBg_"] svg {
+    display: var(--display-icon-image) !important;
 }
