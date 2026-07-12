@@ -233,15 +233,27 @@ div[class*="card_"], button[class*="container_"] {
 div[class*="overlay_"]:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
+/* hover color for messages */
+div[class*="message_"]:hover {
+    background-color: var(--hover-color) !important;
+}
 
-
+body {
+    font-size: var(--font-size);
+    font-family: var(--font), "gg sans";
+}
 /* mentioned */
 div[class*="mentioned_"] {
-    background-color: var(--mentioned-color);
+    background-color: var(--mentioned-color) ;
 }
 div[class*="mentioned_"]::before {
-    background-color: rgb(from var(--mentioned-color) r g b / 1);
+    background-color: rgb(from var(--mentioned-color) r g b / 1) ;
 }
+
+div[class*="mentioned_"]:hover {
+    background-color: var(--mentioned-hover-color) !important;
+}
+
 
 /* icon */
 div[class*="childWrapperNoHoverBg_"] {
@@ -251,4 +263,15 @@ div[class*="childWrapperNoHoverBg_"] {
 }
 div[class*="childWrapperNoHoverBg_"] svg {
     display: var(--display-icon-image) !important;
+}
+
+/* fixes */
+div[class*="slideWrapper_"] {
+    background-color: var(--settings-transparency);
+}
+div[class*="alignStretch_"] {
+    background-color: transparent;
+}
+div[class*="flexible_"] {
+    background-color: var(--context-menu-transparency);
 }

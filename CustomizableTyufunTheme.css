@@ -10,12 +10,24 @@
  /* dont change the import! */
  @import url(coretheme.css);
 
+/* Insert the link into the @import url(link), then type its name into the --font: */
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+SC&display=swap');
 
 /* IMPORTANT INFORMATION!
 if you dont know css this is a short guide:
 what does  rgba(255, 255, 255, 0.3) mean?
-rgba means red, green, blue, and alpha (transparency) so if you want to change the transparency of an element, you adjust the last value (0.3 in this case). Transperency can be from 0 (fully transparent) to 1 (fully opaque) */
+rgba means red, green, blue, and alpha (transparency) so if you want to change the transparency of an element, you adjust the last value (0.3 in this case). Transperency can be from 0 (fully transparent) to 1 (fully opaque)
+AND of course you always can change not only the transparency but also the color of an element.
+you can use any color picker, you need the HEX or RGB values. BUT if you want transparency too,
+you have to use the rgba() function first 3 numbers is color RGB and last one is transparency */
   :root {
+     /* font 
+     The font that has already been imported is "WDXL Lubrifont SC" */
+     --font: none;
+     --font-size: 100%;
+
+
+
     /* Main theme color (actually doesn't change much, it is used for borders, hovers, and highlights)*/
     --main-theme-color: rgba(255, 255, 255, 0.3);
 
@@ -56,6 +68,7 @@ rgba means red, green, blue, and alpha (transparency) so if you want to change t
      /* mentioned color */
           --mentioned-color: rgba(172, 152, 22, 0.1);
           /* --mentioned-color: rgba(96, 68, 129, 0.2); */
+          --mentioned-hover-color: rgba(172, 152, 22, 0.2);
 
           
      /* private channels icon. If you want to have default icon write like this: 
@@ -63,4 +76,12 @@ rgba means red, green, blue, and alpha (transparency) so if you want to change t
      --display-icon-image: ; */
           --dm-icon-image: url(https://i.imgur.com/oEzZRqe.jpeg);
           --display-icon-image: none;
+
+
+     /* hover color for messages */
+     --hover-color: rgba(255, 255, 255, 0.1);
+
+     /* context menu (right click menu) */
+     --context-menu-transparency: rgba(0, 0, 0, 0.6);
+
 }
