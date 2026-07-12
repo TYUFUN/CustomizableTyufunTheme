@@ -125,7 +125,7 @@ div[class*="sidebar_"]::after {
 
 /* members on ds server */
 
-div[class*="container_"] {
+div[class*="content_"] div[class*="container_"] {
     background-color: transparent;
 }
 aside[class*="membersWrap_"] {
