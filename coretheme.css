@@ -199,10 +199,17 @@ div[class*="modal_"] {
     background-position: center;
 }
 div[class*="contentHeader_"]{
-    background-color: transparent;
+    background-color: transparent !important;
 }
 div[class*="modalContent_"] {
     background-color: var(--settings-transparency);
+}
+
+div[class*="contentRegion_"], div[class*="contentRegionScroller_"], div[class*="standardSidebarView_"], div[class*="layer_"], div[class*="sidebarRegionScroller_"]  {
+    background-color: transparent !important;
+}
+div[class*="systemBar_"] {
+    background-color: transparent !important;
 }
 /* user mini-profile */
 
@@ -237,9 +244,11 @@ div[class*="overlay_"]:hover {
 div[class*="message_"]:hover {
     background-color: var(--hover-color) !important;
 }
-
-body {
+*{
+    color: var(--text-color);
     font-size: var(--font-size);
+}
+body {
     font-family: var(--font), "gg sans";
 }
 /* mentioned */
@@ -274,4 +283,46 @@ div[class*="alignStretch_"] {
 }
 div[class*="flexible_"] {
     background-color: var(--context-menu-transparency);
+}
+div[class*="fixed_"] {
+    background-color: var(--context-menu-transparency);
+}
+div[class*="size-md_"] {
+    background-color: var(--context-menu-transparency);
+}
+
+
+
+
+#app-mount nav[class*="wrapper_"] {
+    width: calc(var(--server-columns) * var(--server-slot-size) + 16px) !important;
+}
+#app-mount nav[class*="wrapper_"] > div[class*="container_"] {
+    width: calc(var(--server-columns) * var(--server-slot-size) + 16px) !important;
+}
+
+/* 2. Заставляем внутренний список серверов переносить элементы в ряд */
+#app-mount nav[class*="wrapper_"] [class*="scroller_"] > div[aria-label] {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-content: flex-start !important;
+    justify-content: center !important;
+    gap: 6px 4px !important; /* Отступы между иконками: вертикальный и горизонтальный */
+}
+
+/* 3. РЕШЕНИЕ ПРОБЛЕМЫ ПОЗИЦИОНИРОВАНИЯ ИКОНОК */
+/* Говорим иконкам: "Вы больше не растягиваетесь на всю строку, ваша ширина фиксирована" */
+#app-mount nav[class*="wrapper_"] [class*="scroller_"] div[class*="listItem_"],  div[class*="folderGroup_"]{
+    position: relative !important; /* Сбрасываем возможный absolute */
+    width: var(--server-slot-size) !important;
+    height: 48px !important;
+    margin: 0 !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+}
+
+/* 5. Прячем дефолтные индикаторы непрочитанных (точки слева), они ломают сетку */
+#app-mount nav[class*="wrapper_"] [class*="pill_"] {
+    display: none !important;
 }
