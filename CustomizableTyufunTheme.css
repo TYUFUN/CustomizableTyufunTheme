@@ -8,7 +8,7 @@
  */
 
  /* dont change the import! */
- @import url(coretheme.css);
+ @import url(https://tyufun.github.io/CustomizableTyufunTheme/coretheme.css);
 
 /* Insert the link into the @import url(link), then type its name into the --font: ;
 allowed sources: github, google fonts, gitlab, Codeberg */
