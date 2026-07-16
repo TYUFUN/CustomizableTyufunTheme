@@ -214,7 +214,7 @@ div[class*="systemBar_"] {
 /* user mini-profile */
 
 div[id*="popout_"] {
-    background-color: var(--user-mini-profile-transparency);
+    background-color: var(--user-mini-profile-transparency) !important;
 }
 div[class*="outer_"] {
     background-color: transparent !important;
@@ -269,11 +269,11 @@ div[class*="childWrapperNoHoverBg_"] {
     background-image: var(--dm-icon-image);
     background-size: cover;
     background-position: center;
+
 }
 div[class*="childWrapperNoHoverBg_"] svg {
     display: var(--display-icon-image) !important;
 }
-
 /* fixes */
 div[class*="slideWrapper_"] {
     background-color: var(--settings-transparency);
@@ -290,10 +290,10 @@ div[class*="fixed_"] {
 div[class*="size-md_"] {
     background-color: var(--context-menu-transparency);
 }
-
-
-
-
+div[class*="tutorialContainer_"]{
+    position:  relative !important;
+}
+/* columns logic */
 #app-mount nav[class*="wrapper_"] {
     width: calc(var(--server-columns) * var(--server-slot-size) + 16px) !important;
 }
@@ -314,15 +314,12 @@ div[class*="size-md_"] {
 /* 3. РЕШЕНИЕ ПРОБЛЕМЫ ПОЗИЦИОНИРОВАНИЯ ИКОНОК */
 /* Говорим иконкам: "Вы больше не растягиваетесь на всю строку, ваша ширина фиксирована" */
 #app-mount nav[class*="wrapper_"] [class*="scroller_"] div[class*="listItem_"],  div[class*="folderGroup_"]{
-    position: relative !important; /* Сбрасываем возможный absolute */
     width: var(--server-slot-size) !important;
-    height: 48px !important;
+    position: relative !important;
     margin: 0 !important;
-    display: inline-flex !important;
-    justify-content: center !important;
+}
+div[class*="overlay_"]{
+    position:relative !important;
 }
 
-/* 5. Прячем дефолтные индикаторы непрочитанных (точки слева), они ломают сетку */
-#app-mount nav[class*="wrapper_"] [class*="pill_"] {
-    display: none !important;
-}
+

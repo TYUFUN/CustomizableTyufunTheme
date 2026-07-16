@@ -25,7 +25,7 @@ you can use any color picker, you need the HEX or RGB values. BUT if you want tr
 you have to use the rgba() function first 3 numbers is color RGB and last one is transparency */
   :root {
      /* font 
-     The font that has already been imported is "WDXL Lubrifont SC" */
+     The font that has already been imported is "WDXL Lubrifont SC", if you want to default discord font use none */
      --font: none;
 
 
@@ -52,10 +52,6 @@ you have to use the rgba() function first 3 numbers is color RGB and last one is
     /* scrollbar color */
     --scrollbar-color: rgba(255, 255, 255, 0.2);
 
-
-     /*1 column: 58px, 2 columns: 116px, 3 columns: 174px, 4 columns: 232px */
-     /* --server-listing-width: 174px; */
-
      /* background image for settings */
      --background-settings-image: url(https://i.imgur.com/VFX5gNu.jpeg);
      /* transparency for settings */
@@ -74,8 +70,8 @@ you have to use the rgba() function first 3 numbers is color RGB and last one is
           --mentioned-hover-color: rgba(172, 152, 22, 0.2);
 
           
-     /* private channels icon. If you want to have default icon write like this: 
-     --dm-icon-image: none;
+     /* private channels icon. If you want to have default icon write like this:  */
+     /* --dm-icon-image: none;
      --display-icon-image: ; */
           --dm-icon-image: url(https://i.imgur.com/oEzZRqe.jpeg);
           --display-icon-image: none;
@@ -87,7 +83,8 @@ you have to use the rgba() function first 3 numbers is color RGB and last one is
      /* context menu (right click menu and others) */
      --context-menu-transparency: rgba(0, 0, 0, 1);
      --server-columns: 3;
-     --server-slot-size : 54px;
+     /* recommended size */
+     --server-slot-size : 54px; 
 
 
      /* BE CAREFUL WITH THESE SETTINGS! THEY CAN WORK UNEXPECTEDLY AND CHANGE THE WHOLE THEME */
