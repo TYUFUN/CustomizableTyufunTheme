@@ -82,7 +82,7 @@ you have to use the rgba() function first 3 numbers is color RGB and last one is
 
      /* context menu (right click menu and others) */
      --context-menu-transparency: rgba(0, 0, 0, 1);
-     --server-columns: 3;
+     --server-columns: 1;
      /* recommended size */
      --server-slot-size : 54px; 
 
