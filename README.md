@@ -52,6 +52,6 @@ You can use any image from public image hosting platforms (like **GitHub**, **Im
 ```
 ## 🤝 Contribution & Feedback
 
-If you find any bugs or have feature requests, feel free to open an **Issue** or submit a **Pull Request** in this repository[cite: 1]!
+If you find any bugs or have feature requests, feel free to open an **Issue** or submit a **Pull Request** in this repository!
 
 Created with ❤️ by **[TYUFUN](https://github.com/TYUFUN)**.
