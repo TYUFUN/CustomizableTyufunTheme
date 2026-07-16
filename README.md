@@ -19,7 +19,7 @@ A fully customizable, modern, and transparent Discord theme built for **Vencord*
 
 ## 🚀 Installation
 
-1. Download the `CustomizableTyufunTheme.css` file from this repository.
+1. Download the `CustomizableTyufunTheme.theme.css` file from this repository.
 2. Move the downloaded file into your client's themes folder:
    - **Vencord:** Settings -> Themes -> Open Themes Folder.
    - **BetterDiscord:** Settings -> Themes -> Open Themes Folder.
