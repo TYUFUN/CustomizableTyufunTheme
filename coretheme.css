@@ -126,7 +126,7 @@ div[class*="sidebar_"]::after {
 /* members on ds server */
 
 div[class*="content_"] div[class*="container_"] {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 aside[class*="membersWrap_"] {
     background-color: transparent;
@@ -204,7 +204,12 @@ div[class*="contentHeader_"]{
 div[class*="modalContent_"] {
     background-color: var(--settings-transparency);
 }
-
+div[class*="modalContentInner_"]{
+    background-color: transparent !important;
+}
+aside[class*="sidebar__"]{
+    background-color: transparent !important;
+}
 div[class*="contentRegion_"], div[class*="contentRegionScroller_"], div[class*="standardSidebarView_"], div[class*="layer_"], div[class*="sidebarRegionScroller_"]  {
     background-color: transparent !important;
 }
@@ -238,7 +243,7 @@ div[class*="card_"], button[class*="container_"] {
     border: 1px solid var(--main-theme-color);
 }
 div[class*="overlay_"]:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 /* hover color for messages */
 div[class*="message_"]:hover {
